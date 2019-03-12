@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width">
+  <script src="main.js" async></script>
+  <link rel="stylesheet" href="style.css">
+
+  <title>Ajax starting point</title>
+
+  <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <h1>Ajax - two ways of making an Ajax request</h1>
+
+<!-- autocomplete="off" to disable Firefox persisting radio buttons' state between loads -->
+  <form id='ajaxchoice' autocomplete="off"> 
+      <legend>How do you want to execute your Ajax request?</legend>
+      <label><input type="radio" name="ajaxtype" value="XmlHttpRequest" >XmlHttpRequest</label>
+      <label><input type="radio" name="ajaxtype" value="Fetch">Fetch</label>
+    </form><br>
+
+  <form>
+    <label for="verse-choose">Choose a verse</label>
+    <select id="verse-choose" name="verse-choose">
+      <option>Verse 1</option>
+      <option>Verse 2</option>
+      <option>Verse 3</option>
+      <option>Verse 4</option>
+    </select>
+  </form>
+
+
+
+  <h2>The Conqueror Worm, <em>Edgar Allen Poe, 1843</em></h2>
+
+  <section>
+    <h4>Using XmlHttpRequest</h4>
+    <pre class='xhr'>
+
+        </pre>
+  </section>
+  <section>
+    <h4>Using Fetch</h4>
+    <pre class='fetch'>
+
+      </pre>
+  </section>
+
+
+</body>
+
+</html>
